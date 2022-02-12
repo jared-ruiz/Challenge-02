@@ -64,3 +64,71 @@ footer {
     border-radius: 50%;
     margin: 40px;
 }
+
+.about-me-info {
+    padding: 25px;
+}
+
+.about-me-info h3 {
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about-me-text {
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+}
+
+.projects-info {
+    padding: 25px;
+}
+
+.projects-info h3 {
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+.project-link-text h3 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.project-link-text p {
+    font-family: monospace;
+    font-size: 35px;
+    text-align: center;
+}
+
+.contact-info {
+    padding: 25px;
+}
+
+.contact-info h3 {
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-text a {
+    font-family: monospace;
+    font-size: 35px;
+    flex-direction: column;
+}
+
+
+footer {
+    padding: 25px;
+}
+
+footer h2 {
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+}
