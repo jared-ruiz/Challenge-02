@@ -10,7 +10,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 25px;
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
     z-index: 9999;
 }
 
@@ -18,12 +20,14 @@ header h1 {
     font-family: monospace;
     font-size: 65px;
     margin: 0;
+    word-spacing: -20px;
 }
 
 header a {
     text-decoration: none;
     color: palevioletred;
     font-family: monospace;
+    text-decoration: underline;
 }
 
 header nav {
@@ -36,12 +40,14 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    word-spacing: -15px;
 }
 
 header nav ul li a {
     font-size: 55px;
     padding: 15px;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 body {
@@ -50,29 +56,40 @@ body {
 
 footer {
     padding: 30px;
+    background-color: burlywood;
 }
 
 .hero {
-    background-color: lightsalmon;
-    height: 400px;
-    width: auto;
+    /* background-color: lightsalmon; */
+    background-image: url("../images/dallas_background.jpg");
+    background-size: cover;
+    /* background-position: 80%; */
+    height: 780px;
+    /* width: auto; */
     display: flex;
     justify-content: center;
+
 }
 
 .hero img {
-    border-radius: 50%;
-    margin: 40px;
+    filter:none;
+    border-radius: 60%;
+    margin: 200px;
+    object-fit: contain;
+    border: 15px solid lightcoral;
+    
 }
 
 .about-me-info {
     padding: 25px;
+    margin-top: 30px;
 }
 
 .about-me-info h3 {
     font-family: monospace;
     font-size: 50px;
     text-align: center;
+    text-decoration: underline;
 }
 
 .about-me-text {
@@ -82,12 +99,42 @@ footer {
 }
 
 .projects-info {
-    padding: 25px;
+    /* padding: 25px; */
+    display: flexbox;
 }
 
 .projects-info h3 {
     font-family: monospace;
     font-size: 50px;
+    text-align: center;
+    padding: 25px;
+    text-decoration: underline;
+}
+
+.project-style {
+    width: 100%;
+    margin: 5px;
+}
+
+.recent-project img {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: -5px;
+}
+
+.secondary-project {
+    justify-content: center;
+    display: flex;
+}
+
+.secondary-project img {
+    justify-content: center;  
+    width: 80%;  
+    margin-bottom: 10px;
+}
+
+.project-link-text {
     text-align: center;
 }
 
@@ -96,14 +143,37 @@ footer {
     font-weight: lighter;
 }
 
-.project-link-text p {
+.project-link-text a {
     font-family: monospace;
     font-size: 35px;
+    color: crimson;
+}
+
+.resume-info {
+    padding: 25px;
+    text-decoration: underline;
+}
+
+.resume-info h3 {
+    font-family: monospace;
+    font-size: 50px;
     text-align: center;
+}
+
+.resume-text {
+    text-align: center;
+    margin: 20px;
+}
+
+.resume-text a {
+    font-family: monospace;
+    font-size: 35px;
+    color: crimson;
 }
 
 .contact-info {
     padding: 25px;
+    text-decoration: underline;
 }
 
 .contact-info h3 {
@@ -114,14 +184,14 @@ footer {
 
 .contact-text {
     text-align: center;
+    margin: 20px;
 }
 
 .contact-text a {
     font-family: monospace;
     font-size: 35px;
-    flex-direction: column;
+    color: crimson;
 }
-
 
 footer {
     padding: 25px;
@@ -129,6 +199,7 @@ footer {
 
 footer h2 {
     font-family: monospace;
-    font-size: 40px;
-    text-align: center;
+    font-size: 25px;
+    text-align: start;
+    text-decoration: underline;
 }
