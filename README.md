@@ -29,6 +29,6 @@ For the second challenge of my bootcamp, I am beginning to create the website th
 I plan for this website to serve as an evolving reminder of my knowledge of html, css, and more. 
 Hopefully, by the end of this experience I will have a genuinley interesting piece to show you all. Thank you for your time!
 
-link to deployed website:
+link to deployed website: https://jared-ruiz.github.io/Challenge-02/
 
 -J
