@@ -12,7 +12,7 @@ header {
     padding: 10px 25px;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    position: relative;
     z-index: 9999;
 }
 
@@ -32,6 +32,7 @@ header a {
 
 header nav {
     margin: 8.5px 0;
+    position: relative;
 }
 
 header nav ul {
@@ -56,7 +57,7 @@ body {
 
 footer {
     padding: 30px;
-    background-color: burlywood;
+    background-color: lightgreen;
 }
 
 .hero {
@@ -72,8 +73,7 @@ footer {
 }
 
 .hero img {
-    filter:none;
-    border-radius: 60%;
+    border-radius: 50%;
     margin: 200px;
     object-fit: contain;
     border: 15px solid lightcoral;
@@ -202,4 +202,42 @@ footer h2 {
     font-size: 25px;
     text-align: start;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;   
+    }
+
+    header h1 {
+        font-size: 45px;
+        border: 10px solid lightcoral;
+        padding: 0px 40px;
+    }
+
+    header a {
+        text-decoration: none;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 45px;
+    }
+
+    .about-me-info h3 {
+        margin-top: 35px;
+    }
+
+    .projects-info h3 {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-text {
+        font-size: 35px;
+    }
 }
