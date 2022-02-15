@@ -1,3 +1,10 @@
+:root {
+    --primary-color: lightgreen;
+    --secondary-color: palevioletred;
+    --base-color: lightgoldenrodyellow;
+    --link-color:  indigo;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +12,7 @@
 }
 
 header {
-    background-color: lightgreen;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,7 +32,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: palevioletred;
+    color: var(--secondary-color);
     font-family: monospace;
     text-decoration: underline;
 }
@@ -51,13 +58,21 @@ header nav ul li a {
     text-decoration: underline;
 }
 
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: lightseagreen;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 body {
-    margin: none;    
+    margin: none;  
+    background-color: var(--base-color);  
 }
 
 footer {
     padding: 30px;
-    background-color: lightgreen;
+    background-color: var(--primary-color);
 }
 
 .hero {
@@ -76,7 +91,7 @@ footer {
     border-radius: 50%;
     margin: 200px;
     object-fit: contain;
-    border: 15px solid lightcoral;
+    border: 15px solid var(--secondary-color);
     
 }
 
@@ -90,6 +105,7 @@ footer {
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .about-me-text {
@@ -109,6 +125,7 @@ footer {
     text-align: center;
     padding: 25px;
     text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .project-style {
@@ -141,23 +158,25 @@ footer {
 .project-link-text h3 {
     font-size: 40px;
     font-weight: lighter;
+    color: black;
 }
 
 .project-link-text a {
     font-family: monospace;
     font-size: 35px;
-    color: crimson;
+    color: var(--link-color);
 }
 
 .resume-info {
-    padding: 25px;
-    text-decoration: underline;
+    padding: 50px;
 }
 
 .resume-info h3 {
     font-family: monospace;
     font-size: 50px;
     text-align: center;
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .resume-text {
@@ -168,18 +187,19 @@ footer {
 .resume-text a {
     font-family: monospace;
     font-size: 35px;
-    color: crimson;
+    color: var(--link-color);
 }
 
 .contact-info {
     padding: 25px;
-    text-decoration: underline;
 }
 
 .contact-info h3 {
     font-family: monospace;
     font-size: 50px;
     text-align: center;
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .contact-text {
@@ -190,7 +210,7 @@ footer {
 .contact-text a {
     font-family: monospace;
     font-size: 35px;
-    color: crimson;
+    color: var(--link-color);
 }
 
 footer {
@@ -211,7 +231,7 @@ footer h2 {
 
     header h1 {
         font-size: 45px;
-        border: 10px solid lightcoral;
+        border: 10px solid var(--secondary-color);
         padding: 0px 40px;
     }
 
@@ -225,6 +245,7 @@ footer h2 {
 
     header nav ul li a {
         font-size: 45px;
+        padding: 5px;
     }
 
     .about-me-info h3 {
@@ -234,10 +255,18 @@ footer h2 {
     .projects-info h3 {
         margin-top: 35px;
     }
+
+    .recent-project img {
+        width: 101%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .about-me-text {
         font-size: 35px;
+    }
+
+    .projects-info h3 {
+        margin-top: none;
     }
 }
